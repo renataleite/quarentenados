@@ -27,7 +27,7 @@ class Item
         return execute($sql);
     }
 
-    public function getAll()
+    public static function getAll()
     {
         $sql = "SELECT * FROM items";
 
@@ -36,7 +36,7 @@ class Item
         return $result;
     }
 
-    public function get($id)
+    public static function get($id)
     {
         $sql = "SELECT * FROM items WHERE id = $id";
 
@@ -46,7 +46,7 @@ class Item
     }
 
 
-    public function delete($id)
+    public static function delete($id)
     {
         $sql = "DELETE FROM items WHERE id = $id";
 
