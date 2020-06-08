@@ -12,7 +12,7 @@
                 <a class="nav-link" href="#">Notícias</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Lojas</a>
+                <a class="nav-link" href="?view=stores">Lojas</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Tecnologia</a>
