@@ -5,7 +5,8 @@
     <title>Quarentenados</title>
 </head>
 <body>
-    <h1>Lojas</h1>
+    <?php require_once 'template/menu.php'; ?>
+    <h1>Home</h1>
     <?php require_once 'template/footer.php'; ?>
 </body>
 </html>
