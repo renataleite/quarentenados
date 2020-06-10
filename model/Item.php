@@ -1,4 +1,5 @@
 <?php
+require_once 'tools/connection.php';
 
 class Item
 {
@@ -36,6 +37,9 @@ class Item
         return $result;
     }
 
+    /**
+     * @return Item
+     */
     public static function get($id)
     {
         $sql = "SELECT * FROM items WHERE id = $id";

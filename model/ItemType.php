@@ -1,4 +1,5 @@
 <?php
+require_once 'tools/connection.php';
 
 class ItemType
 {
@@ -10,7 +11,7 @@ class ItemType
     public function insert()
     {
         $sql = "INSERT INTO item_type (name)
-        VALUES ('$this->name')";
+        VALUES ('$this->name')"; 
 
         return execute($sql);
     }
