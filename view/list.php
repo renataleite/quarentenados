@@ -22,7 +22,7 @@ $items = Item::getByType($typeId);
         <h1><?= $type->name ?></h1>
         <div class="row">
             <?php foreach ($items as $item) { ?>
-                <div class="col-lg-2 col-md-3 col-sm-4 my-2">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-2">
                     <div class="card">
                         <img class="card-img-top" src="<?= $item->image ?> " alt="Card image cap" width="">
                         <div class="card-body">

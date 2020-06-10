@@ -14,15 +14,16 @@ class Item
 
     public function insert()
     {
-        $sql = "INSERT INTO items (title, description, image, link, insta_user)
-        VALUES ('$this->title', '$this->description', '$this->image', '$this->link', '$this->insta_user')";
+        $sql = "INSERT INTO items (title, description, image, link, insta_user, type_id)
+        VALUES ('$this->title', '$this->description', '$this->image', '$this->link', '$this->insta_user', '$this->type_id')";
 
         return execute($sql);
     }
 
     public function update()
     {
-        $sql = "UPDATE items SET title='$this->title', description='$this->description', image='$this->image', link='$this->link', insta_user='$this->insta_user' WHERE id = $this->id";
+        $sql = "UPDATE items SET title='$this->title', description='$this->description', image='$this->image', link='$this->link', 
+        insta_user='$this->insta_user', type_id='$this->type_id' WHERE id = $this->id";
         //print_r($sql); exit;
         return execute($sql);
     }

@@ -5,13 +5,11 @@ require_once 'check_login.php';
 
 
 if (isset($_POST['id']) && $_POST['id'] != '') {
-    $item = new Item();
-    $item->id = $_POST['id'];
+    $item = Item::get($_POST['id']);
     $item->title = $_POST['title'];
     $item->description = $_POST['description'];
     $item->link = $_POST['link'];
     $item->insta_user = $_POST['insta_user'];
-    $item->type_id = $_GET['type'];
     $item->update();
 
     header("Location: {$BASE_URL}list.php?type={$item->type_id}");
@@ -24,6 +22,7 @@ if (isset($_POST['id']) && $_POST['id'] != '') {
         $item->insta_user = $_POST['insta_user'];
         $item->type_id = $_GET['type'];
         $item->insert();
+
     
         header("Location: {$BASE_URL}list.php?type={$item->type_id}");
     }
