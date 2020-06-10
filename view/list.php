@@ -31,7 +31,7 @@ $items = Item::getByType($typeId);
                             </a>
                             <p class="card-text"><?= $item->description ?></p>
                             <a href="<?= 'list.php?action=delete&id='.$item->id ?>" class="btn btn-sm btn-danger"><i data-feather="trash-2" stroke-width="2" width="15" height="15"></i></a>
-                            <a href="<?= '?action=edit&id='.$item->id ?>" class="btn btn-sm btn-primary"><i data-feather="edit-3" stroke-width="2" width="15" height="15"></i></a>
+                            <a href="<?= 'save_item.php?id='.$item->id.'&type='.$item->type_id ?>" class="btn btn-sm btn-primary"><i data-feather="edit-3" stroke-width="2" width="15" height="15"></i></a>
                             <br/>
                             <?php if(isset($item->insta_user) && $item->insta_user != ''){ ?>
                                 <a href=""><i data-feather="instagram" stroke-width="2" width="15" height="15"></i> <?= $item->insta_user ?></a>

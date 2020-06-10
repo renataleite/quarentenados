@@ -22,9 +22,8 @@ class Item
 
     public function update()
     {
-        $sql = "UPDATE items SET title='$this->title', description='$this->description', image='$this->image', 
-        link='$this->link', insta_user='$this->user' WHERE id = $this->id ";
-
+        $sql = "UPDATE items SET title='$this->title', description='$this->description', image='$this->image', link='$this->link', insta_user='$this->insta_user' WHERE id = $this->id";
+        //print_r($sql); exit;
         return execute($sql);
     }
 
@@ -37,9 +36,6 @@ class Item
         return $result;
     }
 
-    /**
-     * @return Item
-     */
     public static function get($id)
     {
         $sql = "SELECT * FROM items WHERE id = $id";
