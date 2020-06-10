@@ -20,22 +20,28 @@ $items = Item::getByType($typeId);
     ?>
     <div class="container-fluid">
         <h1><?= $type->name ?></h1>
+        <hr>
         <div class="row">
             <?php foreach ($items as $item) { ?>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-2">
                     <div class="card">
-                        <img class="card-img-top" src="<?= $item->image ?> " alt="Card image cap" width="">
+                        <img class="card-img-top" src="<?= $BASE_URL . 'uploads/' . $item->image ?> " alt="Ilustração" width="">
                         <div class="card-body">
-                            <a href="<?= $item->link ?>">
-                                <h5 class="card-title"><?= $item->title ?></h5>
+                            <a target="_blank" href="<?= $item->link ?>">
+                                <h5 class="card-title mb-0"><?= $item->title ?></h5>
                             </a>
-                            <p class="card-text"><?= $item->description ?></p>
-                            <a href="<?= 'list.php?action=delete&id='.$item->id ?>" class="btn btn-sm btn-danger"><i data-feather="trash-2" stroke-width="2" width="15" height="15"></i></a>
-                            <a href="<?= 'save_item.php?id='.$item->id.'&type='.$item->type_id ?>" class="btn btn-sm btn-primary"><i data-feather="edit-3" stroke-width="2" width="15" height="15"></i></a>
-                            <br/>
-                            <?php if(isset($item->insta_user) && $item->insta_user != ''){ ?>
-                                <a href=""><i data-feather="instagram" stroke-width="2" width="15" height="15"></i> <?= $item->insta_user ?></a>
+                            <?php if (isset($item->insta_user) && $item->insta_user != '') { ?>
+                                <small>Indicação: <a target="_blank" href="<?= "https://www.instagram.com/{$item->insta_user}" ?>"><i data-feather="instagram" stroke-width="2" width="15" height="15"></i> <?= $item->insta_user ?></a></small>
                             <?php } ?>
+                            <p class="card-text"><?= $item->description ?></p>
+                            <a href="<?= 'list.php?action=delete&id=' . $item->id ?>" class="btn btn-sm btn-danger">
+                                <i data-feather="trash-2" stroke-width="2" width="15" height="15"></i> Excluir
+                            </a>
+                            <a href="<?= 'save_item.php?id=' . $item->id . '&type=' . $item->type_id ?>" class="btn btn-sm btn-primary">
+                                <i data-feather="edit-3" stroke-width="2" width="15" height="15"></i> Editar
+                            </a>
+                            <br />
+
                         </div>
                     </div>
                 </div>
