@@ -6,19 +6,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Destaques <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="?view=list&type=1">Destaques <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Notícias</a>
+                <a class="nav-link" href="?view=list&type=2">Notícias</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?view=stores">Lojas</a>
+                <a class="nav-link" href="?view=list&type=3">Lojas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tecnologia</a>
+                <a class="nav-link" href="?view=list&type=4">Tecnologia</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Negócios</a>
+                <a class="nav-link" href="?view=list&type=5">Negócios</a>
             </li>
         </ul>
     </div>

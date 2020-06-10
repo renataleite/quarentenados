@@ -52,4 +52,13 @@ class Item
 
         return execute($sql);
     }
+
+    public static function getByType($typeId)
+    {
+        $sql = "SELECT * FROM items WHERE type_id = $typeId";
+
+        $rs = execute($sql);
+        $result = $rs->fetchAll(PDO::FETCH_OBJ);
+        return $result;
+    }
 }

@@ -4,6 +4,7 @@ session_start();
 
 require_once 'tools/connection.php';
 require_once 'model/Item.php';
+require_once 'model/ItemType.php';
 
 if (!isset($_SESSION["logged"]) || $_SESSION["logged"] != true) {
     $view = 'login';
