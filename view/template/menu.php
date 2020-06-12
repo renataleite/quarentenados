@@ -4,6 +4,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
+    <a class="dropdown-item" href="<?= $BASE_URL ?>index.php?type=1">Home</a>
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Destaques</a>
@@ -43,6 +44,6 @@
         </ul>
     </div>
     <div class="form-inline float-right">
-        <a class="nav-link text-white" href="controller/logout.php" tabindex="-1" aria-disabled="true"><i data-feather="log-out"></i></a>
+        <a class="nav-link text-white" href="logout.php" tabindex="-1" aria-disabled="true"><i data-feather="log-out"></i></a>
     </div>
 </nav>

@@ -9,7 +9,7 @@
 
 <body class="text-center">
 
-    <form class="form-signin" method="POST" action="controller/AuthenticateController.php">
+    <form class="form-signin" method="POST" action="login.php">
         <img class="mb-4" src="resources/imgs/logo-qmdpi.png" alt="" width="280" >
         <h1 class="h3 mb-3 font-weight-normal">Login</h1>
 
