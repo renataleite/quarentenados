@@ -86,7 +86,7 @@ class Item
 
         // Allow certain file formats
         if (!in_array($ext, ['jpg', 'png', 'jpeg', 'gif', 'svg'])) {
-            return  ['success' => false, 'message' => "Desculpe, apenas JPG, JPEG, PNG e GIF são permitidos."];
+            return  ['success' => false, 'message' => "Desculpe, apenas JPG, JPEG, PNG, SVG e GIF são permitidos."];
         }
 
         //make file upload
