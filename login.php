@@ -8,10 +8,10 @@ if(isset($username) && isset($password)){
     if($username == 'quarentenados' && $password == '@covid'){
         session_start();
         $_SESSION["logged"] = true;
-        header('Location: http://localhost/quarentenados/index.php');
+        header('Location: index.php');
         exit;
     }
-    header('Location: http://localhost/quarentenados/login.php?message=Usuário ou senha incorretos!');
+    header('Location: login.php?message=Usuário ou senha incorretos!');
 }
 
 require_once 'view/login.php';

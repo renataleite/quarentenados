@@ -8,6 +8,6 @@
     session_destroy();
     
     http_response_code(303);
-    header( "Location:  http://localhost/quarentenados/?view=login" );
+    header( "Location:  login.php" );
 
 ?>
