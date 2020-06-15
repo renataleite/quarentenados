@@ -34,6 +34,8 @@ Os controllers forão criados na raiz do projeto, os quais são: list, login, lo
 
 Na pasta resources foram criadas as pastas css e imgs com os arquivos correspondentes. 
 
-Na pasta docs foi criado o Diagrama de Caso de Uso. 
+A pasta uploads foi criada para armazenar as imagens que serão enviadas pelo administrador.
 
-Por fim, a pasta uploads foi criada para armazenar as imagens que serão enviadas pelo administrador.
+Por fim, na pasta docs foi criado o Diagrama de Caso de Uso. 
+
+![caso de uso](https://github.com/renataleite/quarentenados/blob/master/docs/diagrama_caso_uso.png)
