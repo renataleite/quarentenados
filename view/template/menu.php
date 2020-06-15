@@ -4,41 +4,41 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-    <a class="dropdown-item" href="<?= $BASE_URL ?>index.php?type=1">Home</a>
+    <a class="dropdown-item" href="index.php?type=1">Home</a>
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Destaques</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>list.php?type=1">Listar</a>
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>save_item.php?type=1">Criar</a>
+                    <a class="dropdown-item" href="list.php?type=1">Listar</a>
+                    <a class="dropdown-item" href="save_item.php?type=1">Criar</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Notícias</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>list.php?type=2">Listar</a>
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>save_item.php?type=2">Criar</a>
+                    <a class="dropdown-item" href="list.php?type=2">Listar</a>
+                    <a class="dropdown-item" href="save_item.php?type=2">Criar</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lojas</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>list.php?type=3">Listar</a>
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>save_item.php?type=3">Criar</a>
+                    <a class="dropdown-item" href="list.php?type=3">Listar</a>
+                    <a class="dropdown-item" href="save_item.php?type=3">Criar</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tecnologia</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>list.php?type=4">Listar</a>
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>save_item.php?type=4">Criar</a>
+                    <a class="dropdown-item" href="list.php?type=4">Listar</a>
+                    <a class="dropdown-item" href="save_item.php?type=4">Criar</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Negócios</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>list.php?type=5">Listar</a>
-                    <a class="dropdown-item" href="<?= $BASE_URL ?>save_item.php?type=5">Criar</a>
+                    <a class="dropdown-item" href="list.php?type=5">Listar</a>
+                    <a class="dropdown-item" href="save_item.php?type=5">Criar</a>
                 </div>
             </li>
         </ul>

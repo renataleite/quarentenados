@@ -1,7 +1,7 @@
 <?php
 require_once 'model/Item.php'; 
 require_once 'model/ItemType.php';
-require_once 'check_login.php';
+require_once 'tools/check_login.php';
 
 
 if(isset($_GET['action']) && $_GET['action']=='delete'){

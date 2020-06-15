@@ -25,7 +25,7 @@ $items = Item::getByType($typeId);
             <?php foreach ($items as $item) { ?>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-2">
                     <div class="card">
-                        <img class="card-img-top" src="<?= $BASE_URL . 'uploads/' . $item->image ?> " alt="Ilustração" width="">
+                        <img class="card-img-top" src="<?='uploads/' . $item->image ?> " alt="Ilustração" width="">
                         <div class="card-body">
                             <a target="_blank" href="<?= $item->link ?>">
                                 <h5 class="card-title mb-0"><?= $item->title ?></h5>
